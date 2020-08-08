@@ -1,0 +1,31 @@
+{
+  "name": "delilah_resto_api",
+  "version": "1.0.0",
+  "description": "An online delivery system for a restaurant",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bluemary04/delilah_resto_API.git"
+  },
+  "keywords": [
+    "any",
+    "key"
+  ],
+  "author": "Bluemary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bluemary04/delilah_resto_API/issues"
+  },
+  "homepage": "https://github.com/Bluemary04/delilah_resto_API#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodejs": "0.0.0"
+  }
+}
