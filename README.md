@@ -13,10 +13,10 @@ Online delivery system for a restaurant. With this API you will be able to creat
 
 ## Error response format
 ---
-`{
-   "status": 401
-   "message": "Invalid token"
- }`
+`{`
+   `"status": 401`
+   `"message": "Invalid token"`
+`}`
  
  ## API Enpoints
  ---
