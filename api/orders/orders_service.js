@@ -66,10 +66,10 @@ module.exports = {
             }
         )
     },
-    deleteOrder: (data, callback) => {
+    deleteOrder: (order_id, callback) => {
         pool.query(
             `delete from orders where order_id =?`,
-            [data.id],
+            [order_id],
             (error, results, fields) => {
                 if(error) {
                     return callback(error)
