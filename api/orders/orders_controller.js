@@ -80,8 +80,8 @@ module.exports = {
         }) 
     },
     deleteOrder: (req, res) => {
-        const data = req.body
-        deleteOrder(data, (err, results) => {
+        const order_id = req.params.id
+        deleteOrder(order_id, (err, results) => {
             if (err) {
                 console.log(err)
                 return res.status(400).json({
