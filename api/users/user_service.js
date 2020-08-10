@@ -70,10 +70,10 @@ module.exports = {
             }
         )
     },
-    deleteUser: (data, callback) => {
+    deleteUser: (user_id, callback) => {
         pool.query(
             `delete from users where user_id =?`,
-            [data.user_id],
+            [user_id],
             (error, results, fields) => {
                 if(error) {
                     return callback(error)
