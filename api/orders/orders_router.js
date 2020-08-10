@@ -7,6 +7,6 @@ router.post('/', checkToken, createOrder)
 router.get('/', isAdmin, checkToken, getOrders)
 router.get('/:id', checkToken, getPermission, getOrderById)
 router.patch('/', checkToken, isAdmin, updateOrder)
-router.delete('/', checkToken, isAdmin, deleteOrder)
+router.delete('/:id', checkToken, isAdmin, deleteOrder)
 
 module.exports = router
