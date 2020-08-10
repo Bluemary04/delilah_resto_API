@@ -81,8 +81,8 @@ module.exports = {
         }) 
     },
     deleteProduct: (req, res) => {
-        const data = req.body
-        deleteProduct(data, (err, results) => {
+        const product_id = req.params.id
+        deleteProduct(product_id, (err, results) => {
             if (err) {
                 console.log(err)
                 return res.status(400).json({
