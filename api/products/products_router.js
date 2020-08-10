@@ -7,6 +7,6 @@ router.post('/', checkToken, isAdmin, createProduct)
 router.get('/', checkToken, getProducts)
 router.get('/:id', checkToken, getProductById)
 router.patch('/', checkToken, isAdmin, updateProduct)
-router.delete('/', checkToken, isAdmin, deleteProduct)
+router.delete('/:id', checkToken, isAdmin, deleteProduct)
 
 module.exports = router
