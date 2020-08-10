@@ -64,10 +64,10 @@ module.exports = {
             }
         )
     },
-    deleteProduct: (data, callback) => {
+    deleteProduct: (product_id, callback) => {
         pool.query(
             `delete from products where product_id =?`,
-            [data.id],
+            [product_id],
             (error, results, fields) => {
                 if(error) {
                     return callback(error)
